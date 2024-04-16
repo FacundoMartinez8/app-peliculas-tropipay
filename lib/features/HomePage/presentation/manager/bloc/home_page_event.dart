@@ -14,3 +14,7 @@ class GetMovieByNameEvent extends HomePageEvent {
 
   GetMovieByNameEvent({required this.name});
 }
+
+class SetFavorite extends HomePageEvent {
+  SetFavorite();
+}

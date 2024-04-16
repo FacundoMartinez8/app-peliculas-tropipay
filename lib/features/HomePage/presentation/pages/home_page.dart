@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 MoviesPopularWidget(moviesPopular: moviesPopular),
                 const Text('Pantalla de Series'),
-                MoviesFavoritesWidgte(),
+                const MoviesFavoritesWidgte(),
               ],
             ),
             bottomNavigationBar: BottomNavigationBarWidget(

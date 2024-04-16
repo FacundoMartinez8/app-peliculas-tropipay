@@ -4,6 +4,8 @@ La app fue realizada con Clean Architecture y TDD. Hay cosas q se podrian mejora
 - Faltaron test como del Bloc y algunos widgets.
 - Se podria refactorizar codigo.
 - Se podria mejorar mucho la logica del buscador.
+- manejo de imagenes de otra forma.
+- imple
 
 Antes de correr la app agregar archivo .env e instalar las dependencias (flutter pub get)
 Las credenciales q yo use son las siguientes:

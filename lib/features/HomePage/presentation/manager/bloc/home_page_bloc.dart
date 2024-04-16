@@ -19,6 +19,7 @@ class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
       : super(HomePageInitial()) {
     on<GetPopularMovieEvent>(_getMoviesPopular);
     on<GetMovieByNameEvent>(_getMoviesByName);
+    on<SetFavorite>(_setFavorite);
   }
 
   void _getMoviesPopular(
@@ -43,5 +44,12 @@ class HomePageBloc extends Bloc<HomePageEvent, HomePageState> {
       (l) => emit(OnMoviesByNameFailure(failure: l)),
       (r) => emit(OnMoviesByName(moviesByName: r)),
     );
+  }
+
+  void _setFavorite(
+    SetFavorite event,
+    Emitter<HomePageState> emit,
+  ) {
+    emit(OnMoviesFavorite());
   }
 }

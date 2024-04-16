@@ -55,8 +55,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               homePageBloc.add(GetPopularMovieEvent(noParams: NoParams()));
             },
             child: Text(getTitleForIndex(index),
-                style:
-                    const TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                style: const TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white)),
           ),
           centerTitle: false,
           actions: [

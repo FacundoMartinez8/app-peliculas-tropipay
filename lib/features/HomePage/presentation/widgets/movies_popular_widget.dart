@@ -10,8 +10,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class MoviesPopularWidget extends StatefulWidget {
-  List<Movie> moviesPopular;
-  MoviesPopularWidget({super.key, required this.moviesPopular});
+  final List<Movie> moviesPopular;
+  const MoviesPopularWidget({super.key, required this.moviesPopular});
 
   @override
   State<MoviesPopularWidget> createState() => _MoviesPopularWidgetState();
@@ -19,11 +19,6 @@ class MoviesPopularWidget extends StatefulWidget {
 
 class _MoviesPopularWidgetState extends State<MoviesPopularWidget> {
   final local = getIt<PreferencesServicesBase>();
-  @override
-  void getFavoriteMovies() async {
-    final movies = await local.getMoviesList('movie');
-    print(movies);
-  }
 
   final homePageBloc = getIt<HomePageBloc>();
   @override

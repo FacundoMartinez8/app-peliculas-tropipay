@@ -75,10 +75,12 @@ class _MovieCardWidgetState extends State<MovieCardWidget> {
                       if (!isFavorite) {
                         await local.saveMovie(widget.movie, 'movie');
                         homePafeBloc.moviesFavorite.add(widget.movie);
+                        homePafeBloc.add(SetFavorite());
                       } else {
                         await local.deleteMovieById(widget.movie.id, 'movie');
                         homePafeBloc.moviesFavorite.removeWhere(
                             (element) => element.id == widget.movie.id);
+                        homePafeBloc.add(SetFavorite());
                       }
                       isFavorite = !isFavorite;
 
@@ -110,7 +112,7 @@ class _MovieCardWidgetState extends State<MovieCardWidget> {
       direction: Axis.horizontal,
       allowHalfRating: true,
       itemCount: 5,
-      itemSize: 20,
+      itemSize: 17,
       itemPadding: const EdgeInsets.symmetric(horizontal: 1.0),
       itemBuilder: (context, _) => const Icon(
         Icons.star,

@@ -30,3 +30,7 @@ class OnMoviesByName extends HomePageState {
 
   OnMoviesByName({required this.moviesByName});
 }
+
+class OnMoviesFavorite extends HomePageState {
+  OnMoviesFavorite();
+}

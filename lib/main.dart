@@ -1,6 +1,5 @@
 import 'package:app_peliculas/core/router/router.dart';
 import 'package:app_peliculas/core/services/dependencies_injection_service.dart';
-import 'package:app_peliculas/core/styles/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:url_strategy/url_strategy.dart';
@@ -23,7 +22,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Pelicualas App',
-      theme: theme,
       routerConfig: goRouter,
     );
   }

@@ -18,11 +18,15 @@ class _MovieDetailsState extends State<MovieDetails> {
       appBar: AppBar(
           title: Text(
             widget.movie.title,
-            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: const TextStyle(
+                fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
           ),
           backgroundColor: Colors.black87,
           leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
+            icon: const Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+            ),
             onPressed: () {
               Navigator.pop(context);
             },
