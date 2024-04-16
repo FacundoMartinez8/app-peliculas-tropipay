@@ -1,20 +1,18 @@
-# app_peliculas
+La app fue realizada con Clean Architecture y TDD. Hay cosas q se podrian mejorar pero por cuestion de tiempo no hice. por ejemplo.
 
-A new Flutter project.
+- Agregar paginacion al pedir las peliculas.
+- Faltaron test como del Bloc y algunos widgets.
+- Se podria refactorizar codigo.
+- Se podria mejorar mucho la logica del buscador.
 
-## Getting Started
+Antes de correr la app agregar archivo .env e instalar las dependencias (flutter pub get)
+Las credenciales q yo use son las siguientes:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+TMBD_URL=https://api.themoviedb.org/3
+API_KEY=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NDI5YzFhZjU0ODE2NzZiMzEwYWUyMDYzNDc4OTAxZiIsInN1YiI6IjY0M2IyZDQ0NGQ2NzkxMDQ2OWQ3MzY0YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.F9wavWbmbgy8Fpy7HLYq4bAZeWg_fKPlLIv1fqMTd8o
 
 
-flutter pub run build_runner build --delete-conflicting-outputs
+Para correr los test generar los archivos mocks.
+
+- flutter pub run build_runner build --delete-conflicting-outputs
 
